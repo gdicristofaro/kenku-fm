@@ -9,6 +9,17 @@ const config = {
   },
   makers: [
     {
+      name: '@electron-forge/maker-snap',
+      config: {
+        features: {
+          audio: true,
+          mpris: 'com.kenku.fm',
+          webgl: true
+        },
+        summary: 'Kenku FM shares music in Discord voice calls'
+      }
+    },
+    {
       name: "@electron-forge/maker-squirrel",
       config: {
         name: "kenku_fm",
