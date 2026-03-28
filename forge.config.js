@@ -8,36 +8,36 @@ const config = {
     appBundleId: "com.kenku.fm",
   },
   makers: [
-    // {
-    //   name: "@electron-forge/maker-squirrel",
-    //   config: {
-    //     name: "kenku_fm",
-    //     setupIcon: path.join(__dirname, "src", "assets", "setup.ico"),
-    //     loadingGif: path.join(__dirname, "src", "assets", "loading.gif"),
-    //   },
-    // },
-    // {
-    //   name: "@electron-forge/maker-deb",
-    //   config: {
-    //     name: "kenku_fm",
-    //     productName: "Kenku FM",
-    //     homepage: "https://kenku.fm",
-    //     icon: path.join(__dirname, "src", "assets", "icons", "256x256.png"),
-    //   },
-    // },
+    {
+      name: "@electron-forge/maker-squirrel",
+      config: {
+        name: "kenku_fm",
+        setupIcon: path.join(__dirname, "src", "assets", "setup.ico"),
+        loadingGif: path.join(__dirname, "src", "assets", "loading.gif"),
+      },
+    },
+    {
+      name: "@electron-forge/maker-deb",
+      config: {
+        name: "kenku_fm",
+        productName: "Kenku FM",
+        homepage: "https://kenku.fm",
+        icon: path.join(__dirname, "src", "assets", "icons", "256x256.png"),
+      },
+    },
     {
       name: "@electron-forge/maker-zip",
       platforms: ["linux", "darwin"],
     },
-    // {
-    //   name: "@electron-forge/maker-rpm",
-    //   config: {
-    //     name: "kenku_fm",
-    //     productName: "Kenku FM",
-    //     homepage: "https://kenku.fm",
-    //     icon: path.join(__dirname, "src", "assets", "icons", "256x256.png"),
-    //   },
-    // },
+    {
+      name: "@electron-forge/maker-rpm",
+      config: {
+        name: "kenku_fm",
+        productName: "Kenku FM",
+        homepage: "https://kenku.fm",
+        icon: path.join(__dirname, "src", "assets", "icons", "256x256.png"),
+      },
+    },
   ],
   publishers: [
     {
