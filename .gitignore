@@ -95,3 +95,5 @@ dist/
 native_modules/
 
 severus/
+
+*.snap
